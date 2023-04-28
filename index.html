@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Index Page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#sectionAA" class="nav-btn">ENTRANCE</a>
+                <a href="#sectionBB" class="nav-btn">ABOUT</a>
+                <a href="#sectionCC" class="nav-btn">THE TEAM</a>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.google.com" class="nav-link">START EXPLORING</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sectionAA">
+            <div class="containerAA">
+                <img src="images/image1.png" class="bottom-layer">
+                <img src="images/image2.png" class="middle-layer">
+                <div class="top-layer">
+                    <a href="https://www.google.com" class="nav-link">ENTER THE WORLD</a>
+                </div>
+            </div>
+        </section>
+        <section id="sectionBB">
+            <div class="containerBB">
+                <div class="part">
+                    <img src="images/image1.gif" class="part-image">
+                    <img src="images/image8.png" class="part-image">
+                </div>
+                <div class="part">
+                    <img src="images/image9.png" class="part-image">
+                    <img src="images/image4.png" class="part-image">
+                </div>
+            </div>
+        </section>
+        <section id="sectionCC">
+            <img src="images/image6.png" class="containerCC">
+            <!-- <div class="containerCC">
+                <div class="image-container">
+                    <img id="main-image" src="image1.jpg">
+                </div>
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="image1.jpg" data-image="image1.jpg">
+                    <img class="thumbnail" src="image2.jpg" data-image="image2.jpg">
+                </div>
+            </div> -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.google.com" class="footer-link">Event</a>
+            <a href="https://www.google.com" class="footer-link">Careers</a>
+            <a href="https://www.google.com" class="footer-link">FAQ</a>
+            <a href="https://www.google.com" class="footer-link">Privacy policy</a>
+            <a href="https://www.google.com" class="footer-link">Terms of use</a>
+            <a href="https://www.google.com" class="footer-link">Contact use</a>
+        </div>
+        <div class="footer-right">
+            <img src="images/image7.png">
+            <!-- <a href="https://www.example3.com" class="footer-icon">ICON</a>
+            <a href="https://www.example4.com" class="footer-icon">ICON</a> -->
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var mainImage = document.getElementById("main-image");
+            var thumbnails = document.querySelectorAll(".thumbnail");
+
+            thumbnails.forEach(function (thumbnail) {
+                thumbnail.addEventListener("click", function () {
+                    mainImage.src = thumbnail.dataset.image;
+                    mainImage.alt = thumbnail.alt;
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
