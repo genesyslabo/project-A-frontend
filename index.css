@@ -110,7 +110,7 @@ section {
     width: 60%;
     height: 60%;
     z-index: 3;
-    bottom: -50%;
+    bottom: -45%;
 }
 
 .containerBB {
@@ -184,11 +184,21 @@ section {
     width: 30%;
     height: 30%;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     object-fit: contain;
+}
+
+.text-container {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    color: white;
+    font-size: 18px;
 }
 
 .thumbnail-container {
