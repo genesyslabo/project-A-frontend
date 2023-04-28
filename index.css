@@ -90,8 +90,8 @@ section {
 }
 
 .bottom-layer {
-    width: 90%;
-    height: 90%;
+    width: 120%;
+    height: 120%;
     z-index: 1;
     top: -10%;
     position: relative;
