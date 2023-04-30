@@ -67,10 +67,6 @@ header {
     color: #aaa;
 }
 
-main {
-    padding: 20px;
-}
-
 section {
     margin-bottom: 20px;
 }
@@ -157,7 +153,7 @@ section {
 }
 
 
-.containerCC {
+.containerCC-web {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -235,6 +231,34 @@ section {
 
 .thumbnail:hover {
     border: 2px solid #2B9581;
+}
+
+
+.containerCC-mobile {
+    display: none;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 150px;
+}
+
+.cc-bottom-layer {
+    width: 100%;
+    transform: scaleY(1.5);
+}
+
+.cc-middle-layer {
+    width: 25%;
+    height: 25%;
+    transform: translate(150%, -200px);
+    object-fit: contain;
+}
+
+.cc-top-layer {
+    width: 70%;
+    height: 70%;
+    z-index: 10;
+    transform: translate(100px, -200px);
+    color: white;
 }
 
 
@@ -328,6 +352,12 @@ footer {
         max-width: 100%;
     }
     .footer-left {
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .containerCC-web {
+        display: none;
+    }
+    .containerCC-mobile {
+        display: block;
     }
 }
