@@ -374,4 +374,7 @@ footer {
     .containerCC-mobile {
         display: block;
     }
+    .top-layer {
+        transform: translate(-50%, 50px);
+    }
 }
