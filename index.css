@@ -98,13 +98,13 @@ section {
     z-index: 2;
     bottom: -30%;
     object-fit: contain;
-    transform: translate(-50%, 50px);
+    transform: translate(-50%, 60px);
 }
 
 .top-layer {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 65px);
+    transform: translate(-50%, 75px);
     width: 60%;
     height: 60%;
     z-index: 3;
@@ -116,7 +116,7 @@ section {
     width: auto;
     height: 35px;
     z-index: 4;
-    transform: translate(20%, -400%);
+    transform: translate(20%, -70px);
 }
 
 .containerBB {
@@ -312,7 +312,7 @@ footer {
     }
     .meta-image {
         width: auto;
-        height: 25px;
+        height: 20px;
     }
     .word-image {
         width: auto;
@@ -356,7 +356,7 @@ footer {
         width: 80%;
         height: 70%;
         z-index: 3;
-        bottom: -45%;
+        bottom: -50%;
     }
     .part-image {
         display: none;
