@@ -77,15 +77,10 @@ section {
     margin: 0 auto 150px;
 }
 
-.bottom-layer,
-.middle-layer,
-.top-layer {
+.bottom-layer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.bottom-layer {
     width: 120%;
     height: 120%;
     z-index: 1;
@@ -95,18 +90,33 @@ section {
 }
 
 .middle-layer {
+    position: absolute;
+    left: 50%;
+    position: absolute;
     width: 80%;
     height: 80%;
     z-index: 2;
-    bottom: -20%;
+    bottom: -30%;
     object-fit: contain;
+    transform: translate(-50%, 50px);
 }
 
 .top-layer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 65px);
     width: 60%;
     height: 60%;
     z-index: 3;
     bottom: -45%;
+}
+
+.meta-image {
+    position: absolute;
+    width: auto;
+    height: 35px;
+    z-index: 4;
+    transform: translate(20%, -400%);
 }
 
 .containerBB {
@@ -299,6 +309,10 @@ footer {
     .middle-layer {
         width: 90%;
         height: 90%;
+    }
+    .meta-image {
+        width: auto;
+        height: 25px;
     }
     .word-image {
         width: auto;
