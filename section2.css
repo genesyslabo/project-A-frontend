@@ -31,3 +31,33 @@
     width: auto;
     height: 35px;
 }
+
+.section2-mobile {
+    display: none;
+    max-width: 80%;
+    margin: 0 auto 150px;
+}
+
+@media (max-width: 1000px) {
+    .section2 {
+        display: none;
+    }
+    .section2-mobile {
+        display: block;
+    }
+    .section2-parts {
+        height: 600px;
+        flex-direction: column;
+        margin: 10px 10px 10px 10px;
+    }
+    .section2-image {
+        width: 80%;
+    }
+    .section2-text {
+        max-width: 100%;
+    }
+    .section2-word-image {
+        width: auto;
+        height: 20px;
+    }
+}

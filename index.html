@@ -25,6 +25,23 @@
                 <a href="https://www.google.com" class="nav-link"> START EXPLORING </a>
             </div>
         </nav>
+        <nav class="navbar-mobile">
+            <div class="nav-left">
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <img src="images/menu.png">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#section1" id="nav-btn-1"> ENTRANCE</a>
+                        <a href="#section2" id="nav-btn-2"> ABOUT</a>
+                        <a href="#section3" id="nav-btn-3"> THE TEAM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.google.com" class="nav-link">START EXPLORING</a>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -71,6 +88,35 @@
             </div>
             </div>
         </section>
+        <section id="section2" class="section2-mobile">
+            <div class="section2-parts">
+                <img src="images/land.gif" class="section2-image">
+                <div class="section2-text">
+                    <img src="images/word-landowner.png" class="section2-word-image">
+                    <p>
+                        MetaFlare land is now available in limited quantities! Purchase land to
+                        build your own digital home and embark on a new era of digital social
+                        interaction. As a landowner, you will also receive exclusive bonuses and
+                        special privileges.
+                    </p>
+                    <a href="https://www.google.com" class="nav-link"> BUY LAND </a>
+                </div>
+            </div>
+            <div class="section2-parts">
+                <img src="images/box.png" class="section2-image">
+                <div class="section2-text">
+                    <img src="images/word-cotnsl.png" class="section2-word-image">
+                    <p>
+                        XXX coins are the only currency used in MetaFlare, which can be
+                        obtained by purchasing directly or participating in MetaFlare games and
+                        activities. Gold coins can be used for staking, purchasing NFT items,
+                        buying land, and more.
+                    </p>
+                    <a href="https://www.google.com" class="nav-link"> BUY TOKEN </a>
+                </div>
+            </div>
+            </div>
+        </section>
 
         <section id="section3" class="section3">
             <img id="main-image" src="images/person1.png" class="section3-image">
@@ -86,31 +132,21 @@
                 <img class="thumbnail" src="images/person1-icon.png" data-image="images/person1.png">
                 <img class="thumbnail" src="images/person2-icon.png" data-image="images/person2.png">
             </div>
-
-            <!-- <img class="image-background" src="images/04.png">
-                <div class="image-container">
-                    <img id="main-image" src="images/person1.png" class="main-image">
-                </div>
-                <img class="image-middle" src="images/03.png">
-                <div class="text-container">
-                    
-                </div>
-                <div class="thumbnail-container">
-                    <img class="thumbnail" src="images/person1-icon.png" data-image="images/person1.png">
-                    <img class="thumbnail" src="images/person2-icon.png" data-image="images/person2.png">
-                </div> -->
-            <!-- <div class="containerCC-mobile">
-                <img src="images/04.png" class="cc-bottom-layer">
-                <img src="images/01.png" class="cc-left">
-                <img src="images/03.png" class="cc-middle-layer">
-                <div class="cc-top-layer">
-                    <p>Chief of growth</p>
-                    <p>Led growth and community at a UGC gaming platform with 30M+ active game makers and voxel artists
-                    </p>
-                    <p>Deeply care about building community and growing creator economy with creators' rights and
-                        interests in mind.</p>
-                </div>
-            </div> -->
+        </section>
+        <section id="section3" class="section3-mobile">
+            <div class="section3-thumbnail-mobile">
+                <img class="thumbnail" src="images/person1-icon.png" data-image="images/person1.png">
+                <img class="thumbnail" src="images/person2-icon.png" data-image="images/person2.png">
+            </div>
+            <div class="section3-people-mobile">
+                <img id="main-image-mobile" src="images/person1.png" class="section3-image">
+                <img class="meta-image" src="images/word-grayson.png">
+            </div>
+            <p>Chief of growth.
+                Led growth and community at a UGC gaming platform with 30M+ active game makers and voxel artists.
+                Deeply care about building community and growing creator economy with creators' rights and
+                interests in mind.
+            </p>
         </section>
 
     </main>
@@ -123,7 +159,7 @@
                 <a href="https://www.google.com" class="footer-link"> FAQ </a>
                 <a href="https://www.google.com" class="footer-link"> Privacy policy </a>
                 <a href="https://www.google.com" class="footer-link"> Terms of use </a>
-                <a href="https://www.google.com" class="footer-link"> Contact use </a>
+                <a href="https://www.google.com" class="footer-link"> Contact us </a>
             </div>
             <div class="footer-version">
                 Createra 2023
@@ -156,12 +192,15 @@
         };
         document.addEventListener("DOMContentLoaded", function () {
             var mainImage = document.getElementById("main-image");
+            var mainImageMobile = document.getElementById("main-image-mobile");
             var thumbnails = document.querySelectorAll(".thumbnail");
 
             thumbnails.forEach(function (thumbnail) {
                 thumbnail.addEventListener("click", function () {
                     mainImage.src = thumbnail.dataset.image;
                     mainImage.alt = thumbnail.alt;
+                    mainImageMobile.src = thumbnail.dataset.image;
+                    mainImageMobile.alt = thumbnail.alt;
                 });
             });
         });

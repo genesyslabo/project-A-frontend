@@ -54,3 +54,34 @@
 .section1-text a {
     margin: 30px;
 }
+
+@media (max-width: 1000px) {
+    .section1-main {
+        width: 120%;
+        top: -5%;
+        right: -5%;
+    }
+    .section1-people {
+        width: 35%;
+        right: 13%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .section1-text {
+        width: 90%;
+        padding: 10px;
+        margin: 50px;
+        top: 25%;
+    }
+    .meta-image {
+        height: 20px;
+        margin: 5px auto 0px 5px;
+    }
+    .section1-text p {
+        font-size: 14px;
+        margin: 5px 5px 10px 5px;
+    }
+    .section1-text a {
+        margin: 5px;
+    }
+}
