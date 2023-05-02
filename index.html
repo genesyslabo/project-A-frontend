@@ -4,95 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Index Page</title>
 </head>
 
 <body>
+
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <a href="#sectionAA" class="nav-btn">ENTRANCE</a>
-                <a href="#sectionBB" class="nav-btn">ABOUT</a>
-                <a href="#sectionCC" class="nav-btn">THE TEAM</a>
+                <a href="#section1" id="nav-btn-1" class="nav-btn"> ENTRANCE </a>
+                <a href="#section2" id="nav-btn-2" class="nav-btn"> ABOUT </a>
+                <a href="#section3" id="nav-btn-3" class="nav-btn"> THE TEAM </a>
             </div>
             <div class="nav-right">
-                <a href="https://www.google.com" class="nav-link">START EXPLORING</a>
+                <a href="https://www.google.com" class="nav-link"> START EXPLORING </a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="sectionAA">
-            <div class="containerAA">
-                <video src="images/image1.mp4" class="bottom-layer" autoplay muted loop playsinline></video>
-                <img src="images/home.png" class="middle-layer">
-                <img src="images/metaflare.png" class="meta-image">
-                <div class="top-layer">
+
+        <section id="section1" class="section1">
+            <video src="images/main.mp4" class="section1-main" autoplay muted loop playsinline></video>
+            <img src="images/people.png" class="section1-people">
+            <div class="section1-text">
+                <img src="images/word-metaflare.png" class="meta-image">
+                <p>
                     "MetaFlare" is a metaverse world that combines gaming and social interaction. Here, you can
                     build your own home and embark on your digital life.
-                </div>
+                </p>
+                <a href="https://www.google.com" class="nav-link"> ENTER THE WORLD </a>
             </div>
         </section>
-        <section id="sectionBB">
-            <div class="containerBB">
-                <div class="part">
-                    <img src="images/image1.gif" class="part-image">
-                    <div class="part-text">
-                        <img src="images/image9.png" class="word-image">
-                        <div>
-                            <br>
-                            <p>
-                                MetaFlare land is now available in limited quantities! Purchase land to
-                                build your own digital home and embark on a new era of digital social
-                                interaction. As a landowner, you will also receive exclusive bonuses and
-                                special privileges.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="part">
-                    <div class="part-text">
-                        <img src="images/image8.png" class="word-image">
-                        <div>
-                            <br>
-                            <p>
-                                XXX coins are the only currency used in MetaFlare, which can be
-                                obtained by purchasing directly or participating in MetaFlare games and
-                                activities. Gold coins can be used for staking, purchasing NFT items,
-                                buying land, and more.
-                            </p>
-                            <br>
-                            <br>
-                            <a href="https://www.google.com" class="nav-link"> BUY Token </a>
-                        </div>
-                    </div>
-                    <img src="images/image4.png" class="part-image">
+
+        <section id="section2" class="section2">
+            <div class="section2-parts">
+                <img src="images/land.gif" class="section2-image">
+                <div class="section2-text">
+                    <img src="images/word-landowner.png" class="section2-word-image">
+                    <p>
+                        MetaFlare land is now available in limited quantities! Purchase land to
+                        build your own digital home and embark on a new era of digital social
+                        interaction. As a landowner, you will also receive exclusive bonuses and
+                        special privileges.
+                    </p>
+                    <a href="https://www.google.com" class="nav-link"> BUY LAND </a>
                 </div>
             </div>
+            <div class="section2-parts">
+                <div class="section2-text">
+                    <img src="images/word-cotnsl.png" class="section2-word-image">
+                    <p>
+                        XXX coins are the only currency used in MetaFlare, which can be
+                        obtained by purchasing directly or participating in MetaFlare games and
+                        activities. Gold coins can be used for staking, purchasing NFT items,
+                        buying land, and more.
+                    </p>
+                    <a href="https://www.google.com" class="nav-link"> BUY TOKEN </a>
+                </div>
+                <img src="images/box.png" class="section2-image">
+            </div>
+            </div>
         </section>
-        <section id="sectionCC">
-            <div class="containerCC-web">
-                <img class="image-background" src="images/04.png">
+
+        <section id="section3" class="section3">
+            <img id="main-image" src="images/person1.png" class="section3-image">
+            <div class="section3-text">
+                <img class="meta-image" src="images/word-grayson.png">
+                <p>Chief of growth.
+                    Led growth and community at a UGC gaming platform with 30M+ active game makers and voxel artists.
+                    Deeply care about building community and growing creator economy with creators' rights and
+                    interests in mind.
+                </p>
+            </div>
+            <div class="section3-thumbnail">
+                <img class="thumbnail" src="images/person1-icon.png" data-image="images/person1.png">
+                <img class="thumbnail" src="images/person2-icon.png" data-image="images/person2.png">
+            </div>
+
+            <!-- <img class="image-background" src="images/04.png">
                 <div class="image-container">
-                    <img id="main-image" src="images/01.png" class="main-image">
+                    <img id="main-image" src="images/person1.png" class="main-image">
                 </div>
                 <img class="image-middle" src="images/03.png">
                 <div class="text-container">
-                    <p>Chief of growth</p>
-                    <p>Led growth and community at a UGC gaming platform with 30M+ active game makers and voxel artists
-                    </p>
-                    <p>Deeply care about building community and growing creator economy with creators' rights and
-                        interests in mind.</p>
+                    
                 </div>
                 <div class="thumbnail-container">
-                    <img class="thumbnail" src="images/01-1.png" data-image="images/01.png">
-                    <img class="thumbnail" src="images/02-1.png" data-image="images/02.png">
-                </div>
-            </div>
-            <div class="containerCC-mobile">
+                    <img class="thumbnail" src="images/person1-icon.png" data-image="images/person1.png">
+                    <img class="thumbnail" src="images/person2-icon.png" data-image="images/person2.png">
+                </div> -->
+            <!-- <div class="containerCC-mobile">
                 <img src="images/04.png" class="cc-bottom-layer">
-                <!-- <img src="images/01.png" class="cc-left"> -->
+                <img src="images/01.png" class="cc-left">
                 <img src="images/03.png" class="cc-middle-layer">
                 <div class="cc-top-layer">
                     <p>Chief of growth</p>
@@ -101,27 +110,50 @@
                     <p>Deeply care about building community and growing creator economy with creators' rights and
                         interests in mind.</p>
                 </div>
-            </div>
+            </div> -->
         </section>
+
     </main>
 
     <footer>
         <div class="footer-left">
-            <a href="https://www.google.com" class="footer-link">Event</a>
-            <a href="https://www.google.com" class="footer-link">Careers</a>
-            <a href="https://www.google.com" class="footer-link">FAQ</a>
-            <a href="https://www.google.com" class="footer-link">Privacy policy</a>
-            <a href="https://www.google.com" class="footer-link">Terms of use</a>
-            <a href="https://www.google.com" class="footer-link">Contact use</a>
+            <div class="footer-links">
+                <a href="https://www.google.com" class="footer-link"> Event </a>
+                <a href="https://www.google.com" class="footer-link"> Careers </a>
+                <a href="https://www.google.com" class="footer-link"> FAQ </a>
+                <a href="https://www.google.com" class="footer-link"> Privacy policy </a>
+                <a href="https://www.google.com" class="footer-link"> Terms of use </a>
+                <a href="https://www.google.com" class="footer-link"> Contact use </a>
+            </div>
+            <div class="footer-version">
+                Createra 2023
+            </div>
         </div>
         <div class="footer-right">
-            <img src="images/image7.png" class="footer-icon">
-            <!-- <a href="https://www.example3.com" class="footer-icon">ICON</a>
-            <a href="https://www.example4.com" class="footer-icon">ICON</a> -->
+            <a href="https://www.google.com" class="footer-icon"> <img src="images/footer-icon-1.png" /> </a>
+            <a href="https://www.google.com" class="footer-icon"> <img src="images/footer-icon-2.png" /> </a>
+            <a href="https://www.google.com" class="footer-icon"> <img src="images/footer-icon-3.png" /> </a>
+            <a href="https://www.google.com" class="footer-icon"> <img src="images/footer-icon-4.png" /> </a>
+            <a href="https://www.google.com" class="footer-icon"> <img src="images/footer-icon-5.png" /> </a>
         </div>
     </footer>
 
     <script>
+        document.getElementById("nav-btn-1").onclick = function () {
+            document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
+            document.getElementById("nav-btn-3").classList.remove("nav-btn-clicked");
+            this.classList.add("nav-btn-clicked");
+        };
+        document.getElementById("nav-btn-2").onclick = function () {
+            document.getElementById("nav-btn-1").classList.remove("nav-btn-clicked");
+            document.getElementById("nav-btn-3").classList.remove("nav-btn-clicked");
+            this.classList.add("nav-btn-clicked");
+        };
+        document.getElementById("nav-btn-3").onclick = function () {
+            document.getElementById("nav-btn-1").classList.remove("nav-btn-clicked");
+            document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
+            this.classList.add("nav-btn-clicked");
+        };
         document.addEventListener("DOMContentLoaded", function () {
             var mainImage = document.getElementById("main-image");
             var thumbnails = document.querySelectorAll(".thumbnail");
@@ -138,8 +170,3 @@
 </body>
 
 </html>
-
-<!-- 
-position 
-metaflate out of the box
- -->

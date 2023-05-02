@@ -1,0 +1,87 @@
+h1,
+p,
+a {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #484848;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b5e3ff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #8dd7ff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+.nav-left,
+.nav-right {
+    display: flex;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.4;
+    padding: 12px 24px;
+    border: none;
+}
+
+.nav-btn:hover {
+    opacity: 1;
+    color: #2b9581
+}
+
+.nav-btn-clicked {
+    opacity: 1;
+    color: #2b9581;
+    font-weight: 600;
+}
+
+.nav-link {
+    font-weight: 500;
+    background-color: #2B9581;
+    color: white;
+    font-size: 14px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #aaa;
+}
+
+/* @media (max-width: 700px) {
+    .nav-btn {
+        font-size: 12px;
+        padding: 6px 6px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 6px 6px;
+        border-radius: 10px;
+    }
+} */

@@ -1,0 +1,56 @@
+.section1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section1-main {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    object-fit: contain;
+    top: -7.5%;
+    right: 5%;
+}
+
+.section1-people {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    z-index: 4;
+    object-fit: contain;
+    right: 20%;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.section1-text {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    background-color: #8dd7ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 50px;
+    z-index: 3;
+    box-sizing: border-box;
+    top: 25%;
+}
+
+.meta-image {
+    width: auto;
+    height: 35px;
+    margin: 20px auto 0px 30px;
+}
+
+.section1-text p {
+    margin: 20px 30px 30px 30px;
+}
+
+.section1-text a {
+    margin: 30px;
+}
