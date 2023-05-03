@@ -64,14 +64,14 @@
     .section1-people {
         width: 35%;
         right: 13%;
-        top: 50%;
+        top: 35%;
         transform: translateY(-50%);
     }
     .section1-text {
         width: 90%;
         padding: 10px;
         margin: 50px;
-        top: 25%;
+        top: 0;
     }
     .meta-image {
         height: 20px;
