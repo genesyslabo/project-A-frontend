@@ -64,6 +64,11 @@ footer {
         gap: 15px;
     }
 
+    .footer-link {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
     .footer-version {
         display: none;
     }
