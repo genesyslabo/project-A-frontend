@@ -58,7 +58,7 @@
 @media (max-width: 1000px) {
     .section1-main {
         width: 120%;
-        top: -5%;
+        top: 0;
         right: -5%;
     }
     .section1-people {
