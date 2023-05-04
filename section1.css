@@ -55,7 +55,7 @@
     margin: 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     .section1 {
         height: 50vh;
     }

@@ -106,7 +106,7 @@
     height: 50px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     .section3 {
         display: none;
     }
