@@ -77,3 +77,12 @@
         height: 20px;
     }
 }
+@media (max-width: 310px) {
+    .section2-word-image {
+        width: auto;
+        height: 15px;
+    }
+    .section2-mobile {
+        margin-bottom: 50px;
+    }
+}

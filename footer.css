@@ -79,3 +79,10 @@ footer {
         gap: 15px;
     }
 }
+
+@media (max-width: 310px) {
+    .footer-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
