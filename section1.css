@@ -18,6 +18,15 @@
     transform: translate(-5%, -1%);
 }
 
+.section1-main-pre {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    object-fit: cover;
+    margin-bottom: 15%;
+}
+
 .section1-text {
     position: absolute;
     display: inline-block;
@@ -57,6 +66,9 @@
     .section1-main {
         margin-bottom: 20%;
     }
+    .section1-main-pre {
+        margin-bottom: 20%;
+    }
     .section1-text {
         top: calc(100% - 45%);
     }
@@ -70,6 +82,9 @@
     .section1-main {
         margin-bottom: 30%;
     }
+    .section1-main-pre {
+        margin-bottom: 30%;
+    }
     .section1-text {
         width: 80%;
         top: calc(100% - 55%);
@@ -78,6 +93,10 @@
 
 @media (max-width: 600px) {
     .section1-main {
+        width: 110%;
+        margin-bottom: 35%;
+    }
+    .section1-main-pre {
         width: 110%;
         margin-bottom: 35%;
     }
@@ -108,12 +127,18 @@
     .section1-main {
         margin-bottom: 40%;
     }
+    .section1-main-pre {
+        margin-bottom: 40%;
+    }
     .section1-text {
         top: calc(100% - 65%);
     }
 }
 @media (max-width: 350px) {
     .section1-main {
+        margin-bottom: 55%;
+    }
+    .section1-main-pre {
         margin-bottom: 55%;
     }
     .section1-text {
@@ -124,9 +149,15 @@
     .section1-main {
         margin-bottom: 65%;
     }
+    .section1-main-pre {
+        margin-bottom: 65%;
+    }
 }
 @media (max-width: 295px) {
     .section1-main {
+        margin-bottom: 75%;
+    }
+    .section1-main-pre {
         margin-bottom: 75%;
     }
     .section1-text {
@@ -135,6 +166,9 @@
 }
 @media (max-width: 257px) {
     .section1-main {
+        margin-bottom: 100%;
+    }
+    .section1-main-pre {
         margin-bottom: 100%;
     }
 }

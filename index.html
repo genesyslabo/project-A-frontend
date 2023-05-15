@@ -47,7 +47,7 @@
     <main>
 
         <section id="section1" class="section1">
-            <video src="images/main.mp4" class="section1-main" autoplay muted loop playsinline></video>
+            <video id="myVideo" src="images/main-pre.mp4" class="section1-main-pre" autoplay muted playsinline></video>
             <div class="section1-text">
                 <img src="images/word-metaflare.png" class="meta-image">
                 <p>
@@ -176,6 +176,15 @@
     </footer>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('myVideo');
+            video.onended = function () {
+                this.src = 'images/main.mp4';
+                this.loop = true;
+                this.className = 'section1-main';
+                this.play();
+            };
+        });
         document.getElementById("nav-btn-1").onclick = function () {
             document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
             document.getElementById("nav-btn-3").classList.remove("nav-btn-clicked");
