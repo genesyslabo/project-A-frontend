@@ -47,7 +47,7 @@
     <main>
 
         <section id="section1" class="section1">
-            <video id="myVideo" src="images/main-pre.mp4" class="section1-main-pre" autoplay muted playsinline></video>
+            <img id="myImage" src="images/main-pre.gif" class="section1-main-pre">
             <div class="section1-text">
                 <img src="images/word-metaflare.png" class="meta-image">
                 <p>
@@ -176,15 +176,18 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var video = document.getElementById('myVideo');
-            video.onended = function () {
-                this.src = 'images/main.mp4';
-                this.loop = true;
-                this.className = 'section1-main';
-                this.play();
-            };
-        });
+        let image = document.getElementById('myImage');
+        let firstImage = new Image();
+        firstImage.src = 'images/main-pre.gif';
+        firstImage.className = 'section1-main-pre';
+        firstImage.onload = function () {
+            setTimeout(function () {
+                image.src = 'images/main.gif';
+                image.className = 'section1-main';
+            }, 4700);
+        };
+        image.src = firstImage.src;
+        image.className = firstImage.className;
         document.getElementById("nav-btn-1").onclick = function () {
             document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
             document.getElementById("nav-btn-3").classList.remove("nav-btn-clicked");
