@@ -47,6 +47,7 @@
     <main>
 
         <section id="section1" class="section1">
+            <div id="overlay"></div>
             <img id="myImage" src="images/main-pre.gif" class="section1-main-pre">
             <div class="section1-text">
                 <img src="images/word-metaflare.png" class="meta-image">
@@ -184,7 +185,8 @@
             setTimeout(function () {
                 image.src = 'images/main.gif';
                 image.className = 'section1-main';
-            }, 4700);
+                overlay.style.display = 'none';
+            }, 4900);
         };
         image.src = firstImage.src;
         image.className = firstImage.className;
