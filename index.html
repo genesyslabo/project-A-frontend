@@ -192,6 +192,10 @@
         };
         image.src = firstImage.src;
         image.className = firstImage.className;
+        image.addEventListener('click', function () {
+            image.style.display = 'none';
+            document.getElementById('whiteBackground').style.display = 'none';
+        });
         document.getElementById("nav-btn-1").onclick = function () {
             document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
             document.getElementById("nav-btn-3").classList.remove("nav-btn-clicked");
