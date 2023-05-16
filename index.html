@@ -178,15 +178,16 @@
 
     <script>
         let image = document.getElementById('myImage');
+        let overlay = document.getElementById('overlay');
         let firstImage = new Image();
-        firstImage.src = 'images/main-pre.gif';
+        firstImage.src = 'images/main-pre.gif?' + Date.now();
         firstImage.className = 'section1-main-pre';
         firstImage.onload = function () {
             setTimeout(function () {
-                image.src = 'images/main.gif';
+                image.src = 'images/main.gif?' + Date.now();
                 image.className = 'section1-main';
                 overlay.style.display = 'none';
-            }, 5100);
+            }, 5000);
         };
         image.src = firstImage.src;
         image.className = firstImage.className;
