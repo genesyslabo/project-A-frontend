@@ -47,7 +47,7 @@
     <main>
 
         <section id="section1" class="section1">
-            <img id="myImage" src="images/main-p-n.gif" class="section1-main-pre">
+            <img id="myImage" src="images/main-p-a.gif" class="section1-main-pre">
             <img id="whiteBackground" class="section1-main-ground">
             <img src="images/main.gif" class="section1-main">
             <div class="section1-text">
@@ -180,15 +180,15 @@
     <script>
         let image = document.getElementById('myImage');
         let firstImage = new Image();
-        firstImage.src = 'images/main-p-n.gif?' + Date.now();
+        firstImage.src = 'images/main-p-a.gif?' + Date.now();
         firstImage.className = 'section1-main-pre';
         firstImage.onload = function () {
             setTimeout(function () {
                 image.style.display = 'none';
-            }, 2750);
+            }, 3750);
             setTimeout(function () {
                 document.getElementById('whiteBackground').style.display = 'none';
-            }, 3000);
+            }, 4125);
         };
         image.src = firstImage.src;
         image.className = firstImage.className;
