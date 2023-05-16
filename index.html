@@ -49,6 +49,7 @@
         <section id="section1" class="section1">
             <img id="myImage" src="images/main-p-n.gif" class="section1-main-pre">
             <img id="whiteBackground" class="section1-main-ground">
+            <img src="images/main.gif" class="section1-main">
             <div class="section1-text">
                 <img src="images/word-metaflare.png" class="meta-image">
                 <p>
@@ -183,8 +184,7 @@
         firstImage.className = 'section1-main-pre';
         firstImage.onload = function () {
             setTimeout(function () {
-                image.src = 'images/main.gif?' + Date.now();
-                image.className = 'section1-main';
+                image.style.display = 'none';
             }, 2750);
             setTimeout(function () {
                 document.getElementById('whiteBackground').style.display = 'none';
