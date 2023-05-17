@@ -1,5 +1,5 @@
 .section3 {
-    background-image: url('images/green.png');
+    background-image: url('images/blue.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,7 +33,7 @@
 }
 
 .section3-text p {
-    color: #FFFFFF;
+    color: #1BA4B9;
     line-height: 23px;
     font-weight: 500;
 }
@@ -54,7 +54,7 @@
 }
 
 .thumbnail:hover {
-    border: 2px solid #2B9581;
+    border: 2px solid #1BA4B9;
 }
 
 .section3-mobile {
@@ -87,7 +87,7 @@
 }
 
 .section3-people-mobile {
-    background-image: url('images/green.png');
+    background-image: url('images/blue.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

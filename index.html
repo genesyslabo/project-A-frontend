@@ -46,18 +46,18 @@
 
     <main>
 
+        <img id="myImage" src="images/main-p-a.gif" class="main-pre">
+        <img id="whiteBackground" class="main-ground">
+
         <section id="section1" class="section1">
-            <img id="myImage" src="images/main-p-a.gif" class="section1-main-pre">
-            <img id="whiteBackground" class="section1-main-ground">
-            <img src="images/main.gif" class="section1-main">
+            <img src="images/main.png" class="people-image">
             <div class="section1-text">
-                <img src="images/word-metaflare.png" class="meta-image">
+                <img src="images/word-meta.png" class="meta-image">
                 <p>
                     "MetaFlare" is a metaverse world that combines gaming and social interaction. Here, you can
                     build your own home and embark on your digital life.
                 </p>
                 <a href="https://www.google.com" class="nav-link"> ENTER THE WORLD </a>
-                <img src="images/people-2.png" class="people-image">
             </div>
         </section>
 
@@ -65,7 +65,7 @@
             <div class="section2-parts">
                 <img src="images/land.gif" class="section2-image">
                 <div class="section2-text">
-                    <img src="images/word-landowner.png" class="section2-word-image">
+                    <img src="images/word-land.png" class="section2-word-image">
                     <p>
                         MetaFlare land is now available in limited quantities! Purchase land to
                         build your own digital home and embark on a new era of digital social
@@ -77,7 +77,7 @@
             </div>
             <div class="section2-parts">
                 <div class="section2-text">
-                    <img src="images/word-cotnsl.png" class="section2-word-image">
+                    <img src="images/word-coins.png" class="section2-word-image">
                     <p>
                         XXX coins are the only currency used in MetaFlare, which can be
                         obtained by purchasing directly or participating in MetaFlare games and
@@ -86,7 +86,7 @@
                     </p>
                     <a href="https://www.google.com" class="nav-link"> BUY TOKEN </a>
                 </div>
-                <img src="images/box.png" class="section2-image">
+                <img src="images/new-box.png" class="section2-image">
             </div>
             </div>
         </section>
@@ -94,7 +94,7 @@
             <div class="section2-parts">
                 <img src="images/land.gif" class="section2-image">
                 <div class="section2-text">
-                    <img src="images/word-landowner.png" class="section2-word-image">
+                    <img src="images/word-land.png" class="section2-word-image">
                     <p>
                         MetaFlare land is now available in limited quantities! Purchase land to
                         build your own digital home and embark on a new era of digital social
@@ -105,9 +105,9 @@
                 </div>
             </div>
             <div class="section2-parts">
-                <img src="images/box.png" class="section2-image">
+                <img src="images/new-box.png" class="section2-image">
                 <div class="section2-text">
-                    <img src="images/word-cotnsl.png" class="section2-word-image">
+                    <img src="images/word-coins.png" class="section2-word-image">
                     <p>
                         XXX coins are the only currency used in MetaFlare, which can be
                         obtained by purchasing directly or participating in MetaFlare games and
@@ -121,9 +121,9 @@
         </section>
 
         <section id="section3" class="section3">
-            <img id="main-image" src="images/person1.png" class="section3-image">
+            <img id="main-image" src="images/person-1.png" class="section3-image">
             <div class="section3-text">
-                <img class="meta-image" src="images/word-grayson.png">
+                <img class="meta-image" src="images/word-gray.png">
                 <p>Chief of growth.
                     Led growth and community at a UGC gaming platform with 30M+ active game makers and voxel artists.
                     Deeply care about building community and growing creator economy with creators' rights and
@@ -131,18 +131,18 @@
                 </p>
             </div>
             <div class="section3-thumbnail">
-                <img class="thumbnail" src="images/person1-icon.png" data-image="images/person1.png">
-                <img class="thumbnail" src="images/person2-icon.png" data-image="images/person2.png">
+                <img class="thumbnail" src="images/person-1-icon.png" data-image="images/person-1.png">
+                <img class="thumbnail" src="images/person-1-icon.png" data-image="images/person-2.png">
             </div>
         </section>
         <section id="section3mobile" class="section3-mobile">
             <div class="section3-thumbnail-mobile">
-                <img class="thumbnail" src="images/person1-icon.png" data-image="images/person1.png">
-                <img class="thumbnail" src="images/person2-icon.png" data-image="images/person2.png">
+                <img class="thumbnail" src="images/person-1-icon.png" data-image="images/person-1.png">
+                <img class="thumbnail" src="images/person-1-icon.png" data-image="images/person-2.png">
             </div>
             <div class="section3-people-mobile">
-                <img id="main-image-mobile" src="images/person1.png" class="section3-image">
-                <img class="team-mobile-image" src="images/team.png">
+                <img id="main-image-mobile" src="images/person-1.png" class="section3-image">
+                <img class="team-mobile-image" src="images/word-gray.png">
             </div>
             <h1>Chief of growth.</h1>
             <p>
@@ -181,7 +181,7 @@
         let image = document.getElementById('myImage');
         let firstImage = new Image();
         firstImage.src = 'images/main-p-a.gif?' + Date.now();
-        firstImage.className = 'section1-main-pre';
+        firstImage.className = 'main-pre';
         firstImage.onload = function () {
             setTimeout(function () {
                 image.style.display = 'none';
