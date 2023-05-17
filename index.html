@@ -121,7 +121,7 @@
         </section>
 
         <section id="section3" class="section3">
-            <img id="main-image" src="images/person-1.png" class="section3-image">
+            <img id="main-image" src="images/person-2.png" class="section3-image">
             <div class="section3-text">
                 <img class="meta-image" src="images/word-gray.png">
                 <p>Chief of growth.
@@ -131,17 +131,17 @@
                 </p>
             </div>
             <div class="section3-thumbnail">
-                <img class="thumbnail" src="images/person-1-icon.png" data-image="images/person-1.png">
-                <img class="thumbnail" src="images/person-1-icon.png" data-image="images/person-2.png">
+                <img id="thumbnail-1" class="thumbnail" src="images/person-1-icon.png">
+                <img id="thumbnail-2" class="thumbnail" src="images/person-2-active.png">
             </div>
         </section>
         <section id="section3mobile" class="section3-mobile">
             <div class="section3-thumbnail-mobile">
-                <img class="thumbnail" src="images/person-1-icon.png" data-image="images/person-1.png">
-                <img class="thumbnail" src="images/person-1-icon.png" data-image="images/person-2.png">
+                <img id="thumbnail-1-m" class="thumbnail" src="images/person-1-icon.png">
+                <img id="thumbnail-2-m" class="thumbnail" src="images/person-2-active.png">
             </div>
             <div class="section3-people-mobile">
-                <img id="main-image-mobile" src="images/person-1.png" class="section3-image">
+                <img id="main-image-mobile" src="images/person-2.png" class="section3-image">
                 <img class="team-mobile-image" src="images/word-gray.png">
             </div>
             <h1>Chief of growth.</h1>
@@ -211,20 +211,34 @@
             document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
             this.classList.add("nav-btn-clicked");
         };
-        document.addEventListener("DOMContentLoaded", function () {
-            var mainImage = document.getElementById("main-image");
-            var mainImageMobile = document.getElementById("main-image-mobile");
-            var thumbnails = document.querySelectorAll(".thumbnail");
 
-            thumbnails.forEach(function (thumbnail) {
-                thumbnail.addEventListener("click", function () {
-                    mainImage.src = thumbnail.dataset.image;
-                    mainImage.alt = thumbnail.alt;
-                    mainImageMobile.src = thumbnail.dataset.image;
-                    mainImageMobile.alt = thumbnail.alt;
-                });
-            });
+        let thumbnail1 = document.getElementById('thumbnail-1');
+        let thumbnail2 = document.getElementById('thumbnail-2');
+        let thumbnail1m = document.getElementById('thumbnail-1-m');
+        let thumbnail2m = document.getElementById('thumbnail-2-m');
+        let mainImage = document.getElementById('main-image');
+        let mainImagem = document.getElementById('main-image-mobile');
+        thumbnail1.addEventListener('click', function () {
+            thumbnail1.src = 'images/person-1-active.png';
+            thumbnail2.src = 'images/person-2-icon.png';
+            mainImage.src = 'images/person-1.png';
         });
+        thumbnail2.addEventListener('click', function () {
+            thumbnail2.src = 'images/person-2-active.png';
+            thumbnail1.src = 'images/person-1-icon.png';
+            mainImage.src = 'images/person-2.png';
+        });
+        thumbnail1m.addEventListener('click', function () {
+            thumbnail1m.src = 'images/person-1-active.png';
+            thumbnail2m.src = 'images/person-2-icon.png';
+            mainImagem.src = 'images/person-1.png';
+        });
+        thumbnail2m.addEventListener('click', function () {
+            thumbnail2m.src = 'images/person-2-active.png';
+            thumbnail1m.src = 'images/person-1-icon.png';
+            mainImagem.src = 'images/person-2.png';
+        });
+
         document.addEventListener('DOMContentLoaded', function () {
             const navBtns = document.querySelectorAll('.nav-btn');
 
