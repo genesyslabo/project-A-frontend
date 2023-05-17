@@ -176,6 +176,16 @@ header {
 }
 
 @media (max-width: 875px) {
+    .nav-btn {
+        padding: 12px 6px;
+    }
+    
+    .nav-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
     .navbar {
         display: none;
     }
