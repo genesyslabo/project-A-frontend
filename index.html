@@ -32,16 +32,16 @@
         <nav class="navbar-mobile">
             <div class="nav-left">
                 <div class="dropdown">
-                    <button class="dropbtn">
+                    <button id="dropbtn" class="dropbtn">
                         <img src="images/menu.png">
                     </button>
-                    <div class="dropdown-content">
-                        <a href="#section1" id="nav-btn-1"> ENTRANCE</a>
-                        <a href="#section2mobile" id="nav-btn-2"> ABOUT</a>
-                        <a href="#section3mobile" id="nav-btn-3"> THE TEAM</a>
-                        <a href="https://www.google.com" > STAKING </a>
-                        <a href="https://www.google.com" > MARKET PLACE </a>
-                        <a href="https://www.google.com" > AIRDROP </a>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="#section1" id="nav-btn-1" class="nav-btn"> ENTRANCE</a>
+                        <a href="#section2" id="nav-btn-2" class="nav-btn"> ABOUT</a>
+                        <a href="#section3" id="nav-btn-3" class="nav-btn"> THE TEAM</a>
+                        <a href="https://www.google.com" class="nav-btn"> STAKING </a>
+                        <a href="https://www.google.com" class="nav-btn"> MARKET PLACE </a>
+                        <a href="https://www.google.com" class="nav-btn"> AIRDROP </a>
                     </div>
                 </div>
             </div>
@@ -247,6 +247,24 @@
         });
 
         document.addEventListener('DOMContentLoaded', function () {
+            var dropdown = document.getElementById('dropdown-content');
+            var button = document.getElementById('dropbtn');
+
+            button.addEventListener('click', function (event) {
+                event.stopPropagation(); // 阻止事件冒泡，防止点击按钮后立即触发document的点击事件
+                if (dropdown.classList.contains('dropdown-content-show')) {
+                    dropdown.classList.remove('dropdown-content-show'); // 移除dropdown-content-show类
+                } else {
+                    dropdown.classList.add('dropdown-content-show'); // 添加dropdown-content-show类
+                }
+            });
+
+            document.addEventListener('click', function (event) {
+                if (dropdown.classList.contains('dropdown-content-show')) {
+                    dropdown.classList.remove('dropdown-content-show'); // 移除dropdown-content-show类
+                }
+            });
+
             const navBtns = document.querySelectorAll('.nav-btn');
 
             navBtns.forEach(btn => {

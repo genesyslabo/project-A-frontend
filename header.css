@@ -136,6 +136,11 @@ header {
 
 .dropdown-content {
     display: none;
+}
+
+
+.dropdown-content-show {
+    display: block;
     position: absolute;
     background-color: #B3F6FF;
     min-width: 160px;
@@ -157,10 +162,6 @@ header {
     color: white;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .nav-link-mobile {
     font-weight: 500;
     background-color: #1AC1CE;
@@ -178,9 +179,11 @@ header {
     .navbar {
         display: none;
     }
+
     .navbar-mobile {
         display: flex;
     }
+
     .nav-link {
         font-size: 12px;
         padding: 6px 24px;
