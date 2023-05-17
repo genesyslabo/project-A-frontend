@@ -8,9 +8,9 @@
 
 .people-image {
     width: auto;
-    height: 500px;
+    height: 390px;
     margin-top: 50px;
-    margin-bottom: -210px;
+    margin-bottom: -60px;
     z-index: 1;
 }
 
@@ -25,6 +25,8 @@
     border-radius: 12px;
     padding: 20px;
     z-index: 3;
+    opacity: 0.9;
+    text-align: left;
 }
 
 .meta-image {
@@ -43,8 +45,8 @@
 
 @media (max-width: 1100px) {
     .people-image {
-        height: 400px;
-        margin-bottom: -168px;
+        height: 290px;
+        margin-bottom: -40px;
     }
     .meta-image {
         height: 22.5px;
@@ -56,8 +58,8 @@
         width: 80%;
     }
     .people-image {
-        height: 300px;
-        margin-bottom: -126px;
+        height: 200px;
+        margin-bottom: -30px;
     }
     .section1-text p {
         font-size: 14px;
@@ -66,9 +68,9 @@
 
 @media (max-width: 400px) {
     .people-image {
-        height: 200px;
+        height: 135px;
         margin-top: 30px;
-        margin-bottom: -85px;
+        margin-bottom: -12px;
     }
     .meta-image {
         height: 17.5px;
