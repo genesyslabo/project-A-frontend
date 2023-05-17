@@ -179,13 +179,16 @@ header {
     .nav-btn {
         padding: 12px 6px;
     }
+    .nav-btn-l {
+        padding: 12px 6px;
+    }
     
     .nav-logo {
         display: none;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 725px) {
     .navbar {
         display: none;
     }
