@@ -134,10 +134,11 @@
             <img id="main-image" src="images/person-2.png" class="section3-image">
             <div class="section3-text">
                 <img class="meta-image" src="images/word-gray.png">
-                <p>Chief of growth.
-                    Led growth and community at a UGC gaming platform with 30M+ active game makers and voxel artists.
-                    Deeply care about building community and growing creator economy with creators' rights and
-                    interests in mind.
+                <p id="person-p">Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI,
+                    Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's
+                    expertise in these fields bridges the gap between Jeet Raut's transformative ideas and
+                    the creation of a technologically advanced yet user-friendly platform. Together, they
+                    form a dynamic duo shaping the next frontier of human interaction.
                 </p>
             </div>
             <div class="section3-thumbnail">
@@ -154,11 +155,11 @@
                 <img id="main-image-mobile" src="images/person-2.png" class="section3-image">
                 <img class="team-mobile-image" src="images/word-gray.png">
             </div>
-            <h1>Chief of growth.</h1>
-            <p>
-                Led growth and community at a UGC gaming platform with 30M+ active game makers and voxel artists. <br>
-                Deeply care about building community and growing creator economy with creators' rights and
-                interests in mind.
+            <p id="person-p-m">Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI,
+                Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's
+                expertise in these fields bridges the gap between Jeet Raut's transformative ideas and
+                the creation of a technologically advanced yet user-friendly platform. Together, they
+                form a dynamic duo shaping the next frontier of human interaction.
             </p>
         </section>
 
@@ -228,25 +229,33 @@
         let thumbnail2m = document.getElementById('thumbnail-2-m');
         let mainImage = document.getElementById('main-image');
         let mainImagem = document.getElementById('main-image-mobile');
+        let person = document.getElementById('person-p');
+        let personm = document.getElementById('person-p-m');
+        let person1 = "Our CEO, Brain Miller , with years of tech industry experience, is the driving force behind Metaflare's mission to create a comprehensive metaverse. Brain Miller  is a visionary who sees a future where technology blurs the boundary between the physical and virtual worlds, unlocking limitless possibilities. "
+        let person2 = "Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI, Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's expertise in these fields bridges the gap between Jeet Raut's transformative ideas and the creation of a technologically advanced yet user-friendly platform. Together, they form a dynamic duo shaping the next frontier of human interaction."
         thumbnail1.addEventListener('click', function () {
             thumbnail1.src = 'images/person-1-a.png';
             thumbnail2.src = 'images/person-2-i.png';
             mainImage.src = 'images/person-1.png';
+            person.innerHTML = person1;
         });
         thumbnail2.addEventListener('click', function () {
             thumbnail2.src = 'images/person-2-a.png';
             thumbnail1.src = 'images/person-1-i.png';
             mainImage.src = 'images/person-2.png';
+            person.innerHTML = person2;
         });
         thumbnail1m.addEventListener('click', function () {
             thumbnail1m.src = 'images/person-1-a.png';
             thumbnail2m.src = 'images/person-2-i.png';
             mainImagem.src = 'images/person-1.png';
+            personm.innerHTML = person1;
         });
         thumbnail2m.addEventListener('click', function () {
             thumbnail2m.src = 'images/person-2-a.png';
             thumbnail1m.src = 'images/person-1-i.png';
             mainImagem.src = 'images/person-2.png';
+            personm.innerHTML = person2;
         });
 
         document.addEventListener('DOMContentLoaded', function () {
