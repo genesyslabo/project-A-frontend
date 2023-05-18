@@ -21,7 +21,6 @@
 }
 
 .section3-image {
-    width: 25%;
     max-height: 100%;
     width: auto;
     object-fit: contain;
@@ -30,6 +29,10 @@
 .section3-text {
     width: 40%;
     margin-left: 50px;
+}
+
+.section3-text img {
+    transform: translateX(-100%);
 }
 
 .section3-text p {
@@ -105,12 +108,15 @@
     .section3 {
         display: none;
     }
+
     .section3-mobile {
         display: flex;
     }
+
     .thumbnail {
         transform: scale(0.5);
     }
+
     .section3-image {
         max-height: 150%;
     }
