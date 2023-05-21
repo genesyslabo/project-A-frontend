@@ -31,10 +31,6 @@
     margin-left: 50px;
 }
 
-.section3-text img {
-    transform: translateX(-100%);
-}
-
 .section3-text p {
     color: #1BA4B9;
     line-height: 23px;
@@ -101,7 +97,7 @@
 
 .team-mobile-image {
     width: auto;
-    height: 40px;
+    height: 30px;
 }
 
 @media (max-width: 500px) {

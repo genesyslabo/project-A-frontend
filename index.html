@@ -133,7 +133,7 @@
         <section id="section3" class="section3">
             <img id="main-image" src="images/person-2.png" class="section3-image">
             <div class="section3-text">
-                <img class="meta-image" src="images/word-gray.png">
+                <img id="person-n" class="section2-word-image" src="images/name2.png">
                 <p id="person-p">Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI,
                     Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's
                     expertise in these fields bridges the gap between Jeet Raut's transformative ideas and
@@ -153,7 +153,7 @@
             </div>
             <div class="section3-people-mobile">
                 <img id="main-image-mobile" src="images/person-2.png" class="section3-image">
-                <img class="team-mobile-image" src="images/word-gray.png">
+                <img id="person-n-m" class="team-mobile-image" src="images/name2.png">
             </div>
             <p id="person-p-m">Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI,
                 Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's
@@ -229,6 +229,8 @@
         let thumbnail2m = document.getElementById('thumbnail-2-m');
         let mainImage = document.getElementById('main-image');
         let mainImagem = document.getElementById('main-image-mobile');
+        let personName = document.getElementById('person-n');
+        let personNamem = document.getElementById('person-n-m');
         let person = document.getElementById('person-p');
         let personm = document.getElementById('person-p-m');
         let person1 = "Our CEO, Brain Miller , with years of tech industry experience, is the driving force behind Metaflare's mission to create a comprehensive metaverse. Brain Miller  is a visionary who sees a future where technology blurs the boundary between the physical and virtual worlds, unlocking limitless possibilities. "
@@ -237,24 +239,28 @@
             thumbnail1.src = 'images/person-1-a.png';
             thumbnail2.src = 'images/person-2-i.png';
             mainImage.src = 'images/person-1.png';
+            personName.src = "images/name1.png";
             person.innerHTML = person1;
         });
         thumbnail2.addEventListener('click', function () {
             thumbnail2.src = 'images/person-2-a.png';
             thumbnail1.src = 'images/person-1-i.png';
             mainImage.src = 'images/person-2.png';
+            personName.src = "images/name2.png";
             person.innerHTML = person2;
         });
         thumbnail1m.addEventListener('click', function () {
             thumbnail1m.src = 'images/person-1-a.png';
             thumbnail2m.src = 'images/person-2-i.png';
             mainImagem.src = 'images/person-1.png';
+            personNamem.src = "images/name1.png";
             personm.innerHTML = person1;
         });
         thumbnail2m.addEventListener('click', function () {
             thumbnail2m.src = 'images/person-2-a.png';
             thumbnail1m.src = 'images/person-1-i.png';
             mainImagem.src = 'images/person-2.png';
+            personNamem.src = "images/name2.png";
             personm.innerHTML = person2;
         });
 
@@ -263,17 +269,17 @@
             var button = document.getElementById('dropbtn');
 
             button.addEventListener('click', function (event) {
-                event.stopPropagation(); // 阻止事件冒泡，防止点击按钮后立即触发document的点击事件
+                event.stopPropagation();
                 if (dropdown.classList.contains('dropdown-content-show')) {
-                    dropdown.classList.remove('dropdown-content-show'); // 移除dropdown-content-show类
+                    dropdown.classList.remove('dropdown-content-show');
                 } else {
-                    dropdown.classList.add('dropdown-content-show'); // 添加dropdown-content-show类
+                    dropdown.classList.add('dropdown-content-show');
                 }
             });
 
             document.addEventListener('click', function (event) {
                 if (dropdown.classList.contains('dropdown-content-show')) {
-                    dropdown.classList.remove('dropdown-content-show'); // 移除dropdown-content-show类
+                    dropdown.classList.remove('dropdown-content-show');
                 }
             });
 
