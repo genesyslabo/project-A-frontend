@@ -143,7 +143,9 @@
         <section id="section3" class="section3">
             <img id="main-image" src="images/person-2.png" class="section3-image">
             <div class="section3-text">
-                <img id="person-n" class="section2-word-image" src="images/name2.png">
+                <h1 id="person-h">
+                    Jeet Raut
+                </h1>
                 <p id="person-p">Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI,
                     Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's
                     expertise in these fields bridges the gap between Jeet Raut's transformative ideas and
@@ -163,7 +165,9 @@
             </div>
             <div class="section3-people-mobile">
                 <img id="main-image-mobile" src="images/person-2.png" class="section3-image">
-                <img id="person-n-m" class="team-mobile-image" src="images/name2.png">
+                <h1 id="person-h-m">
+                    Jeet Raut
+                </h1>
             </div>
             <p id="person-p-m">Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI,
                 Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's
@@ -239,38 +243,40 @@
         let thumbnail2m = document.getElementById('thumbnail-2-m');
         let mainImage = document.getElementById('main-image');
         let mainImagem = document.getElementById('main-image-mobile');
-        let personName = document.getElementById('person-n');
-        let personNamem = document.getElementById('person-n-m');
+        let personName = document.getElementById('person-h');
+        let personNamem = document.getElementById('person-h-m');
         let person = document.getElementById('person-p');
         let personm = document.getElementById('person-p-m');
+        let person1n = "Brain Miller"
+        let person2n = "Jeet Raut"
         let person1 = "Our CEO, Brain Miller , with years of tech industry experience, is the driving force behind Metaflare's mission to create a comprehensive metaverse. Brain Miller  is a visionary who sees a future where technology blurs the boundary between the physical and virtual worlds, unlocking limitless possibilities. "
         let person2 = "Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI, Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's expertise in these fields bridges the gap between Jeet Raut's transformative ideas and the creation of a technologically advanced yet user-friendly platform. Together, they form a dynamic duo shaping the next frontier of human interaction."
         thumbnail1.addEventListener('click', function () {
             thumbnail1.src = 'images/p-1-a.png';
             thumbnail2.src = 'images/p-2-i.png';
             mainImage.src = 'images/person-1.png';
-            personName.src = "images/name1.png";
+            personName.innerHTML = person1n;
             person.innerHTML = person1;
         });
         thumbnail2.addEventListener('click', function () {
             thumbnail2.src = 'images/p-2-a.png';
             thumbnail1.src = 'images/p-1-i.png';
             mainImage.src = 'images/person-2.png';
-            personName.src = "images/name2.png";
+            personName.innerHTML = person2n;
             person.innerHTML = person2;
         });
         thumbnail1m.addEventListener('click', function () {
             thumbnail1m.src = 'images/p-1-a.png';
             thumbnail2m.src = 'images/p-2-i.png';
             mainImagem.src = 'images/person-1.png';
-            personNamem.src = "images/name1.png";
+            personNamem.innerHTML = person1n;
             personm.innerHTML = person1;
         });
         thumbnail2m.addEventListener('click', function () {
             thumbnail2m.src = 'images/p-2-a.png';
             thumbnail1m.src = 'images/p-1-i.png';
             mainImagem.src = 'images/person-2.png';
-            personNamem.src = "images/name2.png";
+            personNamem.innerHTML = person2n;
             personm.innerHTML = person2;
         });
 
