@@ -1,13 +1,9 @@
 .section-video {
-    background: url("images/video.gif") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("images/video.gif") center center; 
     height: 50vh;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
     color: white;
     margin-bottom: 100px;
 }
@@ -26,8 +22,6 @@
         font-size: 28px;
     }
     .section-video-text p {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
-
-

@@ -72,6 +72,7 @@
 
     .section2-mobile {
         display: block;
+        margin-bottom: 50px;
     }
 
     .section2-parts {
@@ -102,10 +103,6 @@
     .section2-word-image {
         width: auto;
         height: 15px;
-    }
-
-    .section2-mobile {
-        margin-bottom: 50px;
     }
 
     .section2-text h1 {
