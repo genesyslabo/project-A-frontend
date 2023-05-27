@@ -1,0 +1,33 @@
+.section-video {
+    background: url("images/video.gif") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.section-video-text {
+    text-align: center;
+    max-width: 90%;
+}
+
+.section-video-text h1 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .section-video-text h1 {
+        font-size: 28px;
+    }
+    .section-video-text p {
+        font-size: 18px;
+    }
+}
+
+
