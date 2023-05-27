@@ -1,10 +1,31 @@
 .section-partners {
-    height: 50vh;
-    max-width: 90%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: white;
-    margin-bottom: 100px;
+    width: 90%;
+    margin: 100px auto 100px auto;
 }
 
+.section-partners h1 {
+    text-align: left;
+}
+
+.section-partners-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-partners-images img {
+    width: 9%;
+    height: auto;
+    margin: 1em 5%;
+}
+
+@media (max-width: 600px) {
+    .section-partners h1 {
+        font-size: 28px;
+    }
+    .section-partners-images img {
+        width: 15%;
+        margin: 1em 1%;
+    }
+}
