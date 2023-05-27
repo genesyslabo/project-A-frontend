@@ -53,13 +53,15 @@
 
     <main>
 
-        <img id="myImage" src="images/main-p-a.gif" class="main-pre">
-        <img id="whiteBackground" class="main-ground">
+        <!-- <img id="myImage" src="images/main-p-a.gif" class="main-pre">
+        <img id="whiteBackground" class="main-ground"> -->
 
         <section id="section1" class="section1">
             <img src="images/main-people.png" class="people-image">
             <div class="section1-text">
-                <img src="images/word-meta.png" class="meta-image">
+                <h1>
+                    METAFLARE
+                </h1>
                 <p>
                     Dive into MetaFlare: your limitless playground for creativity, exploration, and connection in the
                     ever-evolving metaverse - where the future isn't just something you wait for, it's something you
@@ -74,7 +76,9 @@
                 <div class="section2-parts">
                     <img src="images/land.gif" class="section2-image">
                     <div class="section2-text">
-                        <img src="images/word-land.png" class="section2-word-image">
+                        <h1>
+                            Become a LAND Owner
+                        </h1>
                         <p>
                             MetaFlare land is now available in limited quantities! Purchase land to
                             build your own digital home and embark on a new era of digital social
@@ -87,7 +91,9 @@
             </div>
             <div class="section2-parts">
                 <div class="section2-text">
-                    <img src="images/word-coins.png" class="section2-word-image">
+                    <h1>
+                        Get Coins
+                    </h1>
                     <p>
                         MF coins are the only currency used in MetaFlare, which can be
                         obtained by purchasing directly or participating in MetaFlare games and
@@ -104,7 +110,9 @@
             <div class="section2-parts">
                 <img src="images/land.gif" class="section2-image">
                 <div class="section2-text">
-                    <img src="images/word-land.png" class="section2-word-image">
+                    <h1>
+                        Become a LAND Owner
+                    </h1>
                     <p>
                         MetaFlare land is now available in limited quantities! Purchase land to
                         build your own digital home and embark on a new era of digital social
@@ -117,7 +125,9 @@
             <div class="section2-parts">
                 <img src="images/new-box.png" class="section2-image">
                 <div class="section2-text">
-                    <img src="images/word-coins.png" class="section2-word-image">
+                    <h1>
+                        Get Coins
+                    </h1>
                     <p>
                         MF coins are the only currency used in MetaFlare, which can be
                         obtained by purchasing directly or participating in MetaFlare games and
@@ -142,14 +152,14 @@
                 </p>
             </div>
             <div class="section3-thumbnail">
-                <img id="thumbnail-1" class="thumbnail" src="images/person-1-i.png">
-                <img id="thumbnail-2" class="thumbnail" src="images/person-2-a.png">
+                <img id="thumbnail-1" class="thumbnail" src="images/p-1-i.png">
+                <img id="thumbnail-2" class="thumbnail" src="images/p-2-a.png">
             </div>
         </section>
         <section id="section3mobile" class="section3-mobile">
             <div class="section3-thumbnail-mobile">
-                <img id="thumbnail-1-m" class="thumbnail" src="images/person-1-i.png">
-                <img id="thumbnail-2-m" class="thumbnail" src="images/person-2-a.png">
+                <img id="thumbnail-1-m" class="thumbnail" src="images/p-1-i.png">
+                <img id="thumbnail-2-m" class="thumbnail" src="images/p-2-a.png">
             </div>
             <div class="section3-people-mobile">
                 <img id="main-image-mobile" src="images/person-2.png" class="section3-image">
@@ -189,24 +199,24 @@
     </footer>
 
     <script>
-        let image = document.getElementById('myImage');
-        let firstImage = new Image();
-        firstImage.src = 'images/main-p-a.gif?' + Date.now();
-        firstImage.className = 'main-pre';
-        firstImage.onload = function () {
-            setTimeout(function () {
-                image.style.display = 'none';
-            }, 3750);
-            setTimeout(function () {
-                document.getElementById('whiteBackground').style.display = 'none';
-            }, 4125);
-        };
-        image.src = firstImage.src;
-        image.className = firstImage.className;
-        image.addEventListener('click', function () {
-            image.style.display = 'none';
-            document.getElementById('whiteBackground').style.display = 'none';
-        });
+        // let image = document.getElementById('myImage');
+        // let firstImage = new Image();
+        // firstImage.src = 'images/main-p-a.gif?' + Date.now();
+        // firstImage.className = 'main-pre';
+        // firstImage.onload = function () {
+        //     setTimeout(function () {
+        //         image.style.display = 'none';
+        //     }, 3750);
+        //     setTimeout(function () {
+        //         document.getElementById('whiteBackground').style.display = 'none';
+        //     }, 4125);
+        // };
+        // image.src = firstImage.src;
+        // image.className = firstImage.className;
+        // image.addEventListener('click', function () {
+        //     image.style.display = 'none';
+        //     document.getElementById('whiteBackground').style.display = 'none';
+        // });
         document.getElementById("nav-btn-1").onclick = function () {
             document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
             document.getElementById("nav-btn-3").classList.remove("nav-btn-clicked");
@@ -236,29 +246,29 @@
         let person1 = "Our CEO, Brain Miller , with years of tech industry experience, is the driving force behind Metaflare's mission to create a comprehensive metaverse. Brain Miller  is a visionary who sees a future where technology blurs the boundary between the physical and virtual worlds, unlocking limitless possibilities. "
         let person2 = "Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI, Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's expertise in these fields bridges the gap between Jeet Raut's transformative ideas and the creation of a technologically advanced yet user-friendly platform. Together, they form a dynamic duo shaping the next frontier of human interaction."
         thumbnail1.addEventListener('click', function () {
-            thumbnail1.src = 'images/person-1-a.png';
-            thumbnail2.src = 'images/person-2-i.png';
+            thumbnail1.src = 'images/p-1-a.png';
+            thumbnail2.src = 'images/p-2-i.png';
             mainImage.src = 'images/person-1.png';
             personName.src = "images/name1.png";
             person.innerHTML = person1;
         });
         thumbnail2.addEventListener('click', function () {
-            thumbnail2.src = 'images/person-2-a.png';
-            thumbnail1.src = 'images/person-1-i.png';
+            thumbnail2.src = 'images/p-2-a.png';
+            thumbnail1.src = 'images/p-1-i.png';
             mainImage.src = 'images/person-2.png';
             personName.src = "images/name2.png";
             person.innerHTML = person2;
         });
         thumbnail1m.addEventListener('click', function () {
-            thumbnail1m.src = 'images/person-1-a.png';
-            thumbnail2m.src = 'images/person-2-i.png';
+            thumbnail1m.src = 'images/p-1-a.png';
+            thumbnail2m.src = 'images/p-2-i.png';
             mainImagem.src = 'images/person-1.png';
             personNamem.src = "images/name1.png";
             personm.innerHTML = person1;
         });
         thumbnail2m.addEventListener('click', function () {
-            thumbnail2m.src = 'images/person-2-a.png';
-            thumbnail1m.src = 'images/person-1-i.png';
+            thumbnail2m.src = 'images/p-2-a.png';
+            thumbnail1m.src = 'images/p-1-i.png';
             mainImagem.src = 'images/person-2.png';
             personNamem.src = "images/name2.png";
             personm.innerHTML = person2;

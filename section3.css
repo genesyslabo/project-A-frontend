@@ -1,5 +1,5 @@
 .section3 {
-    background-image: url('images/blue.png');
+    background-image: url('images/paople-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,7 +32,7 @@
 }
 
 .section3-text p {
-    color: #1BA4B9;
+    color: #ffffff;
     line-height: 23px;
     font-weight: 500;
 }
@@ -81,7 +81,7 @@
 }
 
 .section3-people-mobile {
-    background-image: url('images/blue.png');
+    background-image: url('images/paople-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
