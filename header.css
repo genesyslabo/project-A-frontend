@@ -130,12 +130,11 @@ header {
     border: none;
     outline: none;
     padding: 8px;
-    border-radius: 8px;
 }
 
 .dropbtn img {
     width: 100%;
-    max-width: 24px;
+    max-width: 42px;
     height: auto;
 }
 
@@ -147,7 +146,7 @@ header {
 .dropdown-content-show {
     display: block;
     position: absolute;
-    background-color: #B3F6FF;
+    background-color: #1A1D29;
     min-width: 160px;
     z-index: 1;
     border-radius: 8px;
@@ -162,7 +161,7 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: #1AC1CE;
+    background-color: #21025c;
     color: white;
 }
 

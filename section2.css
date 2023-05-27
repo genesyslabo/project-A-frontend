@@ -88,17 +88,27 @@
         max-width: 100%;
     }
 
+    .section2-text h1 {
+        font-size: 21px;
+    }
+
     .section2-text p {
         font-size: 14px;
     }
 
 }
-@media (max-width: 310px) {
+
+@media (max-width: 350px) {
     .section2-word-image {
         width: auto;
         height: 15px;
     }
+
     .section2-mobile {
         margin-bottom: 50px;
+    }
+
+    .section2-text h1 {
+        font-size: 20px;
     }
 }
