@@ -56,14 +56,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 
 .section3-mobile h1 {
-    width: 80%;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 0;
+    font-size: 36px;
+    font-weight: 900;
+    margin-left: 20px;
 }
 
 .section3-mobile p {
@@ -91,7 +91,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
     flex-direction: row;
 }
 
