@@ -1,0 +1,10 @@
+.section-partners {
+    height: 50vh;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    margin-bottom: 100px;
+}
+
