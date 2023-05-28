@@ -1,6 +1,6 @@
 .section-roadmap {
     width: 90%;
-    margin: 100px auto 100px auto;
+    margin: 50px auto 100px auto;
 }
 
 .section-roadmap h1 {
@@ -29,7 +29,7 @@
 
 @media (max-width: 600px) {
     .section-roadmap h1 {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .section-roadmap-images {

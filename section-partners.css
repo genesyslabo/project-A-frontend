@@ -1,6 +1,6 @@
 .section-partners {
     width: 90%;
-    margin: 100px auto 100px auto;
+    margin: 100px auto 50px auto;
 }
 
 .section-partners h1 {
@@ -22,7 +22,7 @@
 
 @media (max-width: 600px) {
     .section-partners h1 {
-        font-size: 28px;
+        font-size: 22px;
     }
     .section-partners-images img {
         width: 15%;

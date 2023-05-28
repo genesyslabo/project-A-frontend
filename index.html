@@ -346,14 +346,31 @@
                 }
             });
 
-            const navBtns = document.querySelectorAll('.side-btn');
+            const navBtns = document.querySelectorAll('.nav-btn');
 
             navBtns.forEach(btn => {
                 btn.addEventListener('click', function (event) {
                     event.preventDefault();
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
-                    const offset = window.innerHeight * 0.2;
+                    const offset = window.innerHeight * 0.1;
+                    const targetPosition = targetElement.offsetTop - offset;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            const sideBtns = document.querySelectorAll('.side-btn');
+
+            sideBtns.forEach(btn => {
+                btn.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    const offset = window.innerHeight * 0.1;
                     const targetPosition = targetElement.offsetTop - offset;
 
                     window.scrollTo({
