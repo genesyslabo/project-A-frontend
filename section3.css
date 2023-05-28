@@ -1,6 +1,6 @@
 .section3 {
     background-image: url('images/paople-background.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
