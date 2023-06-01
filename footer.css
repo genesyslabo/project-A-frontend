@@ -9,6 +9,7 @@ footer {
 .footer-left {
     display: flex;
     flex-direction: column;
+    z-index: 10;
 }
 
 .footer-links {
