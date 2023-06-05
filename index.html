@@ -15,56 +15,7 @@
     <title>Index Page</title>
 </head>
 
-<body>
-
-    <header>
-        <nav class="navbar">
-            <div class="nav-left">
-                <img src="images/logo.png" class="nav-logo">
-            </div>
-            <div class="nav-right">
-                <a class="nav-link"> START EXPLORING </a>
-            </div>
-        </nav>
-        <nav class="navbar-mobile">
-            <div class="nav-left">
-                <div class="dropdown">
-                    <button id="dropbtn" class="dropbtn">
-                        <img src="images/logo.png">
-                    </button>
-                    <div id="dropdown-content" class="dropdown-content">
-                        <a href="#section1" id="nav-btn-1" class="nav-btn"> ENTRANCE</a>
-                        <a href="#section2mobile" id="nav-btn-2" class="nav-btn"> ABOUT</a>
-                        <a href="#section3mobile" id="nav-btn-3" class="nav-btn"> THE TEAM</a>
-                        <a class="nav-btn-l"> STAKING </a>
-                        <a class="nav-btn-l"> MARKET PLACE </a>
-                        <a class="nav-btn-l"> AIRDROP </a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-right">
-                <a class="nav-link">START EXPLORING</a>
-            </div>
-        </nav>
-    </header>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="#section1" class="side-btn">Entrance</a>
-        <a href="#section2" class="side-btn">About</a>
-        <a href="#section3" class="side-btn">The Team</a>
-        <a href="#">Staking</a>
-        <a href="#">Airdrop</a>
-        <a href="#">Market Place</a>
-    </div>
-    <div id="menuIcons" class="sideicons">
-        <img src="images/i-1.png" class="sideicon">
-        <img src="images/i-2.png" class="sideicon">
-        <img src="images/i-3.png" class="sideicon">
-        <img src="images/i-4.png" class="sideicon">
-        <img src="images/i-5.png" class="sideicon">
-        <img src="images/i-6.png" class="sideicon">
-    </div>
-
+<body>         
     <main>
         <section id="section1" class="section1">
             <img src="images/main-people.png" class="people-image">
@@ -173,14 +124,14 @@
                 </p>
             </div>
             <div class="section3-thumbnail">
-                <img id="thumbnail-1" class="thumbnail" src="images/p-1-i.png">
-                <img id="thumbnail-2" class="thumbnail" src="images/p-2-a.png">
+                <img id="thumbnail-1" class="thumbnail" src="images/p-11-i.png">
+                <img id="thumbnail-2" class="thumbnail" src="images/p-22-a.png">
             </div>
         </section>
         <section id="section3mobile" class="section3-mobile">
             <div class="section3-thumbnail-mobile">
-                <img id="thumbnail-1-m" class="thumbnail" src="images/p-1-i.png">
-                <img id="thumbnail-2-m" class="thumbnail" src="images/p-2-a.png">
+                <img id="thumbnail-1-m" class="thumbnail" src="images/p-11-i.png">
+                <img id="thumbnail-2-m" class="thumbnail" src="images/p-22-a.png">
             </div>
             <div class="section3-people-mobile">
                 <img id="main-image-mobile" src="images/person-2.png" class="section3-image">
@@ -319,37 +270,6 @@
     </footer>
 
     <script>
-        document.getElementById('menuIcons').onmouseover = function () {
-            openNav();
-        }
-
-        document.getElementById('mySidenav').onmouseleave = function () {
-            closeNav();
-        }
-
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "170px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-
-        document.getElementById("nav-btn-1").onclick = function () {
-            document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
-            document.getElementById("nav-btn-3").classList.remove("nav-btn-clicked");
-            this.classList.add("nav-btn-clicked");
-        };
-        document.getElementById("nav-btn-2").onclick = function () {
-            document.getElementById("nav-btn-1").classList.remove("nav-btn-clicked");
-            document.getElementById("nav-btn-3").classList.remove("nav-btn-clicked");
-            this.classList.add("nav-btn-clicked");
-        };
-        document.getElementById("nav-btn-3").onclick = function () {
-            document.getElementById("nav-btn-1").classList.remove("nav-btn-clicked");
-            document.getElementById("nav-btn-2").classList.remove("nav-btn-clicked");
-            this.classList.add("nav-btn-clicked");
-        };
 
         let thumbnail1 = document.getElementById('thumbnail-1');
         let thumbnail2 = document.getElementById('thumbnail-2');
@@ -366,87 +286,34 @@
         let person1 = "Our CEO, Brain Miller , with years of tech industry experience, is the driving force behind Metaflare's mission to create a comprehensive metaverse. Brain Miller  is a visionary who sees a future where technology blurs the boundary between the physical and virtual worlds, unlocking limitless possibilities. "
         let person2 = "Turning this vision into reality is our CTO, Jeet Raut. As a veteran in VR, AR, and AI, Jeet Raut is instrumental in the actualization of our metaverse platform. Jeet Raut's expertise in these fields bridges the gap between Jeet Raut's transformative ideas and the creation of a technologically advanced yet user-friendly platform. Together, they form a dynamic duo shaping the next frontier of human interaction."
         thumbnail1.addEventListener('click', function () {
-            thumbnail1.src = 'images/p-1-a.png';
-            thumbnail2.src = 'images/p-2-i.png';
+            thumbnail1.src = 'images/p-11-a.png';
+            thumbnail2.src = 'images/p-22-i.png';
             mainImage.src = 'images/person-1.png';
             personName.innerHTML = person1n;
             person.innerHTML = person1;
         });
         thumbnail2.addEventListener('click', function () {
-            thumbnail2.src = 'images/p-2-a.png';
-            thumbnail1.src = 'images/p-1-i.png';
+            thumbnail2.src = 'images/p-22-a.png';
+            thumbnail1.src = 'images/p-11-i.png';
             mainImage.src = 'images/person-2.png';
             personName.innerHTML = person2n;
             person.innerHTML = person2;
         });
         thumbnail1m.addEventListener('click', function () {
-            thumbnail1m.src = 'images/p-1-a.png';
-            thumbnail2m.src = 'images/p-2-i.png';
+            thumbnail1m.src = 'images/p-11-a.png';
+            thumbnail2m.src = 'images/p-22-i.png';
             mainImagem.src = 'images/person-1.png';
             personNamem.innerHTML = person1n;
             personm.innerHTML = person1;
         });
         thumbnail2m.addEventListener('click', function () {
-            thumbnail2m.src = 'images/p-2-a.png';
-            thumbnail1m.src = 'images/p-1-i.png';
+            thumbnail2m.src = 'images/p-22-a.png';
+            thumbnail1m.src = 'images/p-11-i.png';
             mainImagem.src = 'images/person-2.png';
             personNamem.innerHTML = person2n;
             personm.innerHTML = person2;
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var dropdown = document.getElementById('dropdown-content');
-            var button = document.getElementById('dropbtn');
-
-            button.addEventListener('click', function (event) {
-                event.stopPropagation();
-                if (dropdown.classList.contains('dropdown-content-show')) {
-                    dropdown.classList.remove('dropdown-content-show');
-                } else {
-                    dropdown.classList.add('dropdown-content-show');
-                }
-            });
-
-            document.addEventListener('click', function (event) {
-                if (dropdown.classList.contains('dropdown-content-show')) {
-                    dropdown.classList.remove('dropdown-content-show');
-                }
-            });
-
-            const navBtns = document.querySelectorAll('.nav-btn');
-
-            navBtns.forEach(btn => {
-                btn.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    const offset = window.innerHeight * 0.1;
-                    const targetPosition = targetElement.offsetTop - offset;
-
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-
-            const sideBtns = document.querySelectorAll('.side-btn');
-
-            sideBtns.forEach(btn => {
-                btn.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    const offset = window.innerHeight * 0.1;
-                    const targetPosition = targetElement.offsetTop - offset;
-
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
     </script>
 
 </body>
